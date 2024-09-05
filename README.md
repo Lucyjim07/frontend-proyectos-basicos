@@ -37,3 +37,23 @@ git add .
     6.2.1 Agregamos los archivos que se quieren respaldar
     6.2.2 Colocar un mensaje explicando los cambios realizados
     6.2.3 Crear el commit y hacer push con el botón de la herramienta
+
+## Crear un proyecto con Vite
+
+Vite es una herramienta para crear proyectos de front de forma más fácil.
+
+Para crear un proyecto de Vite se usa el siguiente comando y se siguen las instrucciones.
+
+```bash
+npm create vite@latest
+```
+
+Una vez creado el proyecto con vite aparecen unas instrucciones para instalar las dependencias y ejecutar el proyecto
+
+```bash
+cd nombre-proyecto
+npm install
+npm run dev
+```
+
+Una vez ejecutado el proyecto se puede abrir la URL del servidor que crea vite para ver en funcionamiento la página creada
