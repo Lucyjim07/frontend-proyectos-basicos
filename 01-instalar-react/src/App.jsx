@@ -1,5 +1,3 @@
-/* eslint-disable space-before-function-paren */
-/* eslint-disable semi */
 import './App.css';
 
 function App() {
