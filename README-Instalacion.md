@@ -114,13 +114,16 @@ root.render(<h1>Primeros pasos con React!!!</h1>);
 
 11. Instalar linter para que ayude a revisar el código mientras se programa
 
-- Instalar dependencias con el siguiente comando 
+- Instalar dependencias con el siguiente comando
+
 ```bash
 $ npx eslint --init
 ```
+
 - Seleccionar entre las opciones que permiten hacer la configuración del linter lo siguiente
+
 ```bash
-√ How would you like to use ESLint? · problems    
+√ How would you like to use ESLint? · problems
 √ What type of modules does your project use? · esm
 √ Which framework does your project use? · react
 √ Does your project use TypeScript? · javascript
@@ -132,26 +135,26 @@ eslint, globals, @eslint/js, eslint-plugin-react
 √ Which package manager do you want to use? · npm
 ```
 
-- Este proceso de instalación creará un archivo con el nombre `eslint.config.js` en donde se encuentran todas las configuraciones de las reglas que queremos que aplique el linter, el archivo se deberá ver como el siguiente
+- Este proceso de instalación creará un archivo con el nombre `eslint.config.mjs` en donde se encuentran todas las configuraciones de las reglas que queremos que aplique el linter, el archivo se deberá ver como el siguiente
 
 ```js
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import pluginReact from "eslint-plugin-react";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import pluginReact from 'eslint-plugin-react';
 
 export default [
   {
-    files: ["**/*.{js,jsx}"],
+    files: ['**/*.{js,jsx}'],
     languageOptions: { globals: globals.browser },
     rules: {
       ...pluginJs.configs.recommended.rules,
       ...pluginReact.configs.recommended.rules,
-    }
-  }
+    },
+  },
 ];
 ```
 
-1.  Mover el componente principal a su propio archivo, esto se hace creando un archivo `App.jsx` en la carpeta `src`, creando una función que se va a exportar. La funcion va a retornar el componente principal de la aplicación que React va a mostrar en el navegador.
+12. Mover el componente principal a su propio archivo, esto se hace creando un archivo `App.jsx` en la carpeta `src`, creando una función que se va a exportar. La funcion va a retornar el componente principal de la aplicación que React va a mostrar en el navegador.
 
 ```jsx
 function App() {
